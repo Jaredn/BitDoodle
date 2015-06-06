@@ -36,18 +36,18 @@ disjoin:
 
 EXAMPLES:
 
->from BitDoodle import BitDoodle
->format_ = [8, 8, 8, 8]
->dood = BitDoodle(format_)
->dood.join([10, 20, 30, 40])
+-from BitDoodle import BitDoodle
+-format_ = [8, 8, 8, 8]
+-dood = BitDoodle(format_)
+-dood.join([10, 20, 30, 40])
 IPv4Address(u'10.20.30.40')
 
->format_ = [8, 5, 4, 5, 4, 6]
->dood = BitDoodle(format_)
->dood.join([10, 4, 0, 1, 4, 30])
+-format_ = [8, 5, 4, 5, 4, 6]
+-dood = BitDoodle(format_)
+-dood.join([10, 4, 0, 1, 4, 30])
 IPv4Address(u'10.32.5.30')
 
->format_ = [40, 6, 4, 6, 4, 4, 64]
->dood = BitDoodle(format_)
->dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])
+-format_ = [40, 6, 4, 6, 4, 4, 64]
+-dood = BitDoodle(format_)
+-dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])
 IPv6Address(u'2001:99aa:10:14a::ff')
