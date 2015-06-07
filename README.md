@@ -33,3 +33,10 @@ This is the same as above, but for IPv6.  If ARIN (or your RIR) gave you a /40, 
 &gt;&gt;&gt;dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])<br/>
 <b>IPv6Address(u'2001:99aa:10:14a::ff')</b><br/>
 <br/>
+
+<h3>Disjoin example</h3>
+Disjoin does the opposite of join.  Given a format and an integer (in this case, represented as a binary number / IP address), return the values of each section.  So just like above, if you knew the IP address you could find out the data center, security zone, pod, etc, of each field.
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; format_ = [8, 5, 4, 5, 4, 6]<br/>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dood = BitDoodle(format_)<br/>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dood.disjoin(0b00001010000011111111111100101101)<br/>
+[10L, 1, 15, 31, 12, 45]
