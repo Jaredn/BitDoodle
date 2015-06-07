@@ -35,7 +35,7 @@ This is the same as above, but for IPv6.  If ARIN (or your RIR) gave you a /40, 
 <br/>
 
 <h3>Disjoin example</h3>
-Disjoin does the opposite of join.  Given a format and an integer (in this case, represented as a binary number / IP address), return the values of each section.  So just like above, if you knew the IP address you could find out the data center, security zone, pod, etc, of each field.
+Disjoin does the opposite of join.  Given a format and an integer (in this case, represented as a binary number / IP address), return the values of each section.  So just like above, if you knew the IP address you could find out the data center, security zone, pod, etc, of each field.<br/>
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; format_ = [8, 5, 4, 5, 4, 6]<br/>
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dood = BitDoodle(format_)<br/>
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; dood.disjoin(0b00001010000011111111111100101101)<br/>
