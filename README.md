@@ -39,4 +39,4 @@ Disjoin does the opposite of join.  Given a format and an integer (in this case,
 &gt;&gt;&gt; format_ = [8, 5, 4, 5, 4, 6]<br/>
 &gt;&gt;&gt; dood = BitDoodle(format_)<br/>
 &gt;&gt;&gt; dood.disjoin(0b00001010000011111111111100101101)<br/>
-[10L, 1, 15, 31, 12, 45]
+<b>[10L, 1, 15, 31, 12, 45]</b>
