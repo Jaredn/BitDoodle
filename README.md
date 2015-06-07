@@ -10,19 +10,22 @@ Description:<br/>
 
 EXAMPLES:
 
--from BitDoodle import BitDoodle<br/>
--format_ = [8, 8, 8, 8]<br/>
--dood = BitDoodle(format_)<br/>
--dood.join([10, 20, 30, 40])<br/>
+&gt;&gt;&gt;from BitDoodle import BitDoodle<br/>
+&gt;&gt;&gt;format_ = [8, 8, 8, 8]<br/>
+&gt;&gt;&gt;dood = BitDoodle(format_)<br/>
+&gt;&gt;&gt;dood.join([10, 20, 30, 40])<br/>
 IPv4Address(u'10.20.30.40')<br/>
+&gt;&gt;&gt;<br/>
+&gt;&gt;&gt;dood.total_bit_length<br/>
+32<br/>
 <br/>
--format_ = [8, 5, 4, 5, 4, 6]<br/>
--dood = BitDoodle(format_)<br/>
--dood.join([10, 4, 0, 1, 4, 30])<br/>
+&gt;&gt;&gt;format_ = [8, 5, 4, 5, 4, 6]<br/>
+&gt;&gt;&gt;dood = BitDoodle(format_)<br/>
+&gt;&gt;&gt;dood.join([10, 4, 0, 1, 4, 30])<br/>
 IPv4Address(u'10.32.5.30')<br/>
 <br/>
--format_ = [40, 6, 4, 6, 4, 4, 64]<br/>
--dood = BitDoodle(format_)<br/>
--dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])<br/>
+&gt;&gt;&gt;format_ = [40, 6, 4, 6, 4, 4, 64]<br/>
+&gt;&gt;&gt;dood = BitDoodle(format_)<br/>
+&gt;&gt;&gt;dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])<br/>
 IPv6Address(u'2001:99aa:10:14a::ff')<br/>
 <br/>
