@@ -19,7 +19,6 @@
 &gt;&gt;&gt;<br/>
 &gt;&gt;&gt;dood.total_bit_length<br/>
 <b>32</b><br/>
-<br/>
 <h3>Not so obvious IPv4 example</h3>
 Imagine if a standard IP address was broken up into meaningful pieces.  For example the first 8 bits are a static 10, but the next 5 bits represent your datacenter, and the next 4 bits might represent the security zone, and the next 4 bits might represent the pod number, and so on.  Given a format and values to put into the fields, you can generate a meaningful IP address.<br/>
 &gt;&gt;&gt;format_ = [8, 5, 4, 5, 4, 6]<br/>
