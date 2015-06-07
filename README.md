@@ -1,4 +1,4 @@
-<h3>BitDoodle</h3><br/>
+<h1>BitDoodle!</h1>
 Python Class for dealing with variable length bit doodles.<br/>
 <br/>
 Description:<br/>
