@@ -59,7 +59,6 @@ class BitDoodle:
             shift_distance = self.get_bit_shift_distance(self.format_, index)
             real_value = values[index] << shift_distance
             real_values.append(real_value)
-            # print index, " -> ", bit_length, " -> ", hex(values[index]), " -> ", real_value
     
         if self.total_bit_length == 32 or self.total_bit_length == 128:
             return ipaddress.ip_address(sum(real_values))
@@ -74,7 +73,6 @@ class BitDoodle:
             real_value = value & mask
             piece_value = real_value >> self.get_bit_shift_distance(self.format_, index)
             piece_values.append(piece_value)
-            # print index, " -> ", bit_length, " -> ", format(mask, '032b'), format(real_value, '032b'), " -> ", piece_value
         return piece_values
 
     def get_bit_shift_distance(self, format_, index):
