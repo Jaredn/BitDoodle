@@ -66,7 +66,6 @@ class BitDoodle:
             return sum(real_values)
 
     def disjoin(self, value):
-        # value = bin(value)
         piece_values = []
         for index, bit_length in enumerate(self.format_):
             mask = (self.get_max_value(bit_length) << self.get_bit_shift_distance(self.format_, index)) #creates a mask of all 1's for only the relevant bits
@@ -76,7 +75,7 @@ class BitDoodle:
         return piece_values
 
     def get_bit_shift_distance(self, format_, index):
-        shift_distance = sum([x for x in format_[index+1::]])
+        shift_distance = sum(format_[index+1::])
         return shift_distance
 
     def validate_value(self, value, bit_length):
