@@ -2,11 +2,13 @@
 <h2>Python Class for dealing with variable length bit doodles.</h2>
 <br/>
 <h3>Description:</h3>
-    Bit Doodle is a class designed for working with variable length bit fields.  While the class can technically be
-    used for anything, it is catered towards IPv4 and IPv6 addresses.  The main methods are join and disjoin, which
-    will take a list of variable length fields and a list of values and join them together to a single value, or
-    disjoin which will take a single value and a list of bit lengths, and break the original value into its multiple
-    parts.
+```
+Bit Doodle is a class designed for working with variable length bit fields.  While the class can technically be
+used for anything, it is catered towards IPv4 and IPv6 addresses.  The main methods are join and disjoin, which
+will take a list of variable length fields and a list of values and join them together to a single value, or
+disjoin which will take a single value and a list of bit lengths, and break the original value into its multiple
+parts.
+```
 
 <h2>EXAMPLES:</h2><br/>
 
