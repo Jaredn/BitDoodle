@@ -27,6 +27,7 @@ dood.join([10, 4, 0, 1, 4, 30])
 IPv4Address(u'10.32.5.30')
 ```
 Not so obvious IPv6 example
+
 This is the same as above, but for IPv6.  If ARIN (or your RIR) gave you a /40, the first 40 bits would be static, then the next 24 bits could mean something specific to your use case, split up however you want.  Finally the last 64 are the host, which you could also break down further if you wanted.  This is more to show BitDoodle working fine with very large numbers.
 
 ```python
@@ -36,8 +37,9 @@ dood.join([0x200199aa00, 4, 0, 1, 4, 10, 255])
 IPv6Address(u'2001:99aa:10:14a::ff')
 ```
 
-Disjoin example<
-Disjoin does the opposite of join.  Given a format and an integer (in this case, represented as a binary number / IP address), return the values of each section.  So just like above, if you knew the IP address you could find out the data center, security zone, pod, etc, of each field.<
+Disjoin example
+
+Disjoin does the opposite of join.  Given a format and an integer (in this case, represented as a binary number / IP address), return the values of each section.  So just like above, if you knew the IP address you could find out the data center, security zone, pod, etc, of each field.
 ```python
 format_ = [8, 5, 4, 5, 4, 6]
 dood = BitDoodle(format_)
