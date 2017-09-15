@@ -7,8 +7,8 @@ Bit Doodle is a class designed for working with variable length bit fields.  Whi
 
 <h2>EXAMPLES:</h2><br/>
 
-<h3>Basic useage simple example</h2>
-```bash
+<h3>Basic useage simple example</h3>
+```
 >>> from BitDoodle import BitDoodle
 >>> format_ = [8, 8, 8, 8]
 >>> dood = BitDoodle(format_)
