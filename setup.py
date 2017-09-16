@@ -9,6 +9,7 @@ setup(
     license='MIT',
     long_description='This package is used to doodle with the bits',
     url='https://github.com/Jaredn/bitdoodle',
+    download_url='https://github.com/Jaredn/bitdoodle/archive/0.2.tar.gz',
     keywords="bit doodle bitmath ip ipaddress",
     install_requires=[
         'ipaddress',
