@@ -42,7 +42,7 @@ disjoin:
 import ipaddress
 
 
-class BitDoodle:
+class BitDoodle(object):
     def __init__(self, format_):
         self.format_ = format_
         self.total_bit_length = sum(self.format_)
