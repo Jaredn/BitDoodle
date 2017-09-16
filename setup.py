@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='bitdoodle',
-    version='0.1',
+    version='0.2',
     packages=['bitdoodle',],
     author='Jared Newell',
     author_email='jared.newell@gmail.com',
